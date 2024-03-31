@@ -17,3 +17,30 @@ WARNING 2024-03-31 13:25:09,031 basehttp 7792 8688 "GET / HTTP/1.1" 404 2165
 INFO 2024-03-31 13:25:15,649 basehttp 7792 8688 "GET /HW HTTP/1.1" 301 0
 INFO 2024-03-31 13:25:15,668 basehttp 7792 6484 "GET /HW/ HTTP/1.1" 200 353
 INFO 2024-03-31 13:25:40,299 basehttp 7792 6484 "GET /HW/about_me/ HTTP/1.1" 200 549
+INFO 2024-03-31 21:53:00,112 autoreload 5936 4240 Watching for file changes with StatReloader
+WARNING 2024-03-31 21:53:07,571 log 5936 9816 Not Found: /
+WARNING 2024-03-31 21:53:07,572 basehttp 5936 9816 "GET / HTTP/1.1" 404 2165
+INFO 2024-03-31 21:53:19,184 basehttp 5936 9816 "GET /HW HTTP/1.1" 301 0
+INFO 2024-03-31 21:53:19,198 basehttp 5936 5840 "GET /HW/ HTTP/1.1" 200 353
+INFO 2024-03-31 21:53:37,148 basehttp 5936 5840 "GET /HW/create_client HTTP/1.1" 301 0
+ERROR 2024-03-31 21:53:37,337 log 5936 7288 Internal Server Error: /HW/create_client/
+Traceback (most recent call last):
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: create_client() missing 4 required positional arguments: 'email', 'phone_number', 'address', and 'registration_date'
+ERROR 2024-03-31 21:53:37,339 basehttp 5936 7288 "GET /HW/create_client/ HTTP/1.1" 500 64430
+INFO 2024-03-31 21:55:07,626 basehttp 5936 7288 "GET /HW/create_client?sdfsd,sfdsdf,sdfsdf,4564 HTTP/1.1" 301 0
+ERROR 2024-03-31 21:55:07,675 log 5936 1580 Internal Server Error: /HW/create_client/
+Traceback (most recent call last):
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: create_client() missing 4 required positional arguments: 'email', 'phone_number', 'address', and 'registration_date'
+ERROR 2024-03-31 21:55:07,679 basehttp 5936 1580 "GET /HW/create_client/?sdfsd,sfdsdf,sdfsdf,4564 HTTP/1.1" 500 64859
