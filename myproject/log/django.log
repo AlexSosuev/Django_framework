@@ -1,0 +1,19 @@
+INFO 2024-03-31 12:47:05,206 autoreload 9232 9632 Watching for file changes with StatReloader
+WARNING 2024-03-31 12:47:11,989 log 9232 9896 Not Found: /
+WARNING 2024-03-31 12:47:11,991 basehttp 9232 9896 "GET / HTTP/1.1" 404 2169
+INFO 2024-03-31 12:47:17,642 views 9232 9896 Index page accessed
+INFO 2024-03-31 12:47:17,646 basehttp 9232 9896 "GET /prefix/ HTTP/1.1" 200 12
+INFO 2024-03-31 12:47:24,706 basehttp 9232 9896 "GET /prefix/number HTTP/1.1" 301 0
+INFO 2024-03-31 12:47:24,720 basehttp 9232 5480 "GET /prefix/number/ HTTP/1.1" 200 2
+INFO 2024-03-31 12:47:31,404 basehttp 9232 5480 "GET /prefix/coin HTTP/1.1" 301 0
+INFO 2024-03-31 12:47:31,411 views 9232 6324 result = orel
+INFO 2024-03-31 12:47:31,412 basehttp 9232 6324 "GET /prefix/coin/ HTTP/1.1" 200 4
+INFO 2024-03-31 12:47:36,177 basehttp 9232 6324 "GET /prefix/cube HTTP/1.1" 301 0
+INFO 2024-03-31 12:47:36,188 basehttp 9232 7320 "GET /prefix/cube/ HTTP/1.1" 200 1
+INFO 2024-03-31 13:22:19,317 autoreload 1904 408 Watching for file changes with StatReloader
+INFO 2024-03-31 13:25:04,714 autoreload 7792 7536 Watching for file changes with StatReloader
+WARNING 2024-03-31 13:25:09,025 log 7792 8688 Not Found: /
+WARNING 2024-03-31 13:25:09,031 basehttp 7792 8688 "GET / HTTP/1.1" 404 2165
+INFO 2024-03-31 13:25:15,649 basehttp 7792 8688 "GET /HW HTTP/1.1" 301 0
+INFO 2024-03-31 13:25:15,668 basehttp 7792 6484 "GET /HW/ HTTP/1.1" 200 353
+INFO 2024-03-31 13:25:40,299 basehttp 7792 6484 "GET /HW/about_me/ HTTP/1.1" 200 549
