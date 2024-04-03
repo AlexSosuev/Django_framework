@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from app_lecture.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('prefix/', include('myapp.urls')),
-    path('HW/', include('hw_app.urls'))
+    path('prefix/', include('myapp.urls')),
+    path('HW/', include('hw_app.urls')),
+    path('les3/', include('app_lecture.urls')),
+    path('', index)
 ]

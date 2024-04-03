@@ -44,3 +44,63 @@ Traceback (most recent call last):
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: create_client() missing 4 required positional arguments: 'email', 'phone_number', 'address', and 'registration_date'
 ERROR 2024-03-31 21:55:07,679 basehttp 5936 1580 "GET /HW/create_client/?sdfsd,sfdsdf,sdfsdf,4564 HTTP/1.1" 500 64859
+INFO 2024-04-03 20:35:57,085 autoreload 8344 7108 Watching for file changes with StatReloader
+INFO 2024-04-03 20:37:49,445 autoreload 3204 8208 Watching for file changes with StatReloader
+WARNING 2024-04-03 20:37:52,798 log 3204 1656 Not Found: /
+WARNING 2024-04-03 20:37:52,804 basehttp 3204 1656 "GET / HTTP/1.1" 404 2377
+WARNING 2024-04-03 20:37:53,044 log 3204 1656 Not Found: /favicon.ico
+WARNING 2024-04-03 20:37:53,046 basehttp 3204 1656 "GET /favicon.ico HTTP/1.1" 404 2428
+WARNING 2024-04-03 20:38:01,020 log 3204 1656 Not Found: /les3
+WARNING 2024-04-03 20:38:01,021 basehttp 3204 1656 "GET /les3 HTTP/1.1" 404 2407
+WARNING 2024-04-03 20:38:21,394 log 3204 1656 Not Found: /les3/
+WARNING 2024-04-03 20:38:21,394 basehttp 3204 1656 "GET /les3/ HTTP/1.1" 404 2651
+INFO 2024-04-03 20:38:45,136 basehttp 3204 1656 "GET /les3/hello/ HTTP/1.1" 200 26
+INFO 2024-04-03 20:38:52,163 basehttp 3204 1656 "GET /les3/hello2/ HTTP/1.1" 200 23
+INFO 2024-04-03 20:39:36,018 basehttp 3204 1656 "GET /les3/hello2 HTTP/1.1" 301 0
+INFO 2024-04-03 20:39:36,026 basehttp 3204 8128 "GET /les3/hello2/ HTTP/1.1" 200 23
+INFO 2024-04-03 20:41:02,258 autoreload 3204 8208 D:\Education_python\Django_framework\myproject\app_lecture\urls.py changed, reloading.
+INFO 2024-04-03 20:41:03,129 autoreload 7540 4044 Watching for file changes with StatReloader
+INFO 2024-04-03 20:41:13,515 autoreload 7540 4044 D:\Education_python\Django_framework\myproject\app_lecture\urls.py changed, reloading.
+INFO 2024-04-03 20:41:15,104 autoreload 4528 1104 Watching for file changes with StatReloader
+INFO 2024-04-03 20:45:20,887 autoreload 4528 1104 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-03 20:45:22,451 autoreload 3144 7752 Watching for file changes with StatReloader
+INFO 2024-04-03 20:52:29,648 autoreload 6148 5392 Watching for file changes with StatReloader
+WARNING 2024-04-03 20:53:03,239 log 6148 8080 Not Found: /les3/post//python/
+WARNING 2024-04-03 20:53:03,240 basehttp 6148 8080 "GET /les3/post//python/ HTTP/1.1" 404 3326
+WARNING 2024-04-03 20:53:17,701 log 6148 8080 Not Found: /les3/post/2022/6/python/
+WARNING 2024-04-03 20:53:17,702 basehttp 6148 8080 "GET /les3/post/2022/6/python/ HTTP/1.1" 404 3344
+INFO 2024-04-03 20:53:35,370 basehttp 6148 8080 "GET /les3/posts/2022/6/python/ HTTP/1.1" 200 360
+INFO 2024-04-03 21:02:22,253 autoreload 6148 5392 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-03 21:02:23,820 autoreload 3824 8096 Watching for file changes with StatReloader
+INFO 2024-04-03 21:04:13,176 autoreload 3824 8096 D:\Education_python\Django_framework\myproject\app_lecture\urls.py changed, reloading.
+INFO 2024-04-03 21:04:14,142 autoreload 7056 3788 Watching for file changes with StatReloader
+INFO 2024-04-03 21:04:38,318 autoreload 7056 3788 D:\Education_python\Django_framework\myproject\app_lecture\urls.py changed, reloading.
+INFO 2024-04-03 21:04:39,607 autoreload 5520 4140 Watching for file changes with StatReloader
+INFO 2024-04-03 21:05:04,517 basehttp 5520 2472 "GET /les3/ HTTP/1.1" 200 175
+INFO 2024-04-03 21:13:38,672 autoreload 5520 4140 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-03 21:13:40,085 autoreload 7820 2180 Watching for file changes with StatReloader
+INFO 2024-04-03 21:14:20,423 autoreload 7820 2180 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-03 21:14:21,915 autoreload 7888 8724 Watching for file changes with StatReloader
+INFO 2024-04-03 21:15:37,247 autoreload 7888 8724 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-03 21:15:38,462 autoreload 4992 7028 Watching for file changes with StatReloader
+INFO 2024-04-03 21:17:17,352 autoreload 4992 7028 D:\Education_python\Django_framework\myproject\app_lecture\urls.py changed, reloading.
+INFO 2024-04-03 21:17:18,271 autoreload 1960 7524 Watching for file changes with StatReloader
+INFO 2024-04-03 21:23:31,739 autoreload 1960 7524 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-03 21:23:33,140 autoreload 5484 8868 Watching for file changes with StatReloader
+INFO 2024-04-03 21:24:34,868 autoreload 5484 8868 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-03 21:24:36,539 autoreload 5396 7792 Watching for file changes with StatReloader
+INFO 2024-04-03 21:26:04,626 autoreload 5396 7792 D:\Education_python\Django_framework\myproject\app_lecture\urls.py changed, reloading.
+INFO 2024-04-03 21:26:05,847 autoreload 9036 7752 Watching for file changes with StatReloader
+INFO 2024-04-03 21:26:20,491 basehttp 9036 7336 "GET /les3/for/ HTTP/1.1" 200 866
+INFO 2024-04-03 21:41:28,423 autoreload 9036 7752 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-03 21:41:29,712 autoreload 4316 8872 Watching for file changes with StatReloader
+INFO 2024-04-03 21:42:55,874 autoreload 4316 8872 D:\Education_python\Django_framework\myproject\app_lecture\urls.py changed, reloading.
+INFO 2024-04-03 21:42:57,092 autoreload 6184 1872 Watching for file changes with StatReloader
+INFO 2024-04-03 21:44:25,988 autoreload 6184 1872 D:\Education_python\Django_framework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-03 21:44:27,415 autoreload 4012 8576 Watching for file changes with StatReloader
+INFO 2024-04-03 21:49:31,539 autoreload 4012 8576 D:\Education_python\Django_framework\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-03 21:49:33,595 autoreload 7792 8124 Watching for file changes with StatReloader
+INFO 2024-04-03 21:52:05,624 autoreload 7792 8124 D:\Education_python\Django_framework\myproject\app_lecture\models.py changed, reloading.
+INFO 2024-04-03 21:52:07,134 autoreload 412 8304 Watching for file changes with StatReloader
+INFO 2024-04-03 21:53:51,156 autoreload 412 8304 D:\Education_python\Django_framework\myproject\app_lecture\models.py changed, reloading.
+INFO 2024-04-03 21:53:52,143 autoreload 6376 7468 Watching for file changes with StatReloader

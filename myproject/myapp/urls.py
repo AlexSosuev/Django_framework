@@ -9,5 +9,5 @@ urlpatterns = [
     path('number/', views.number, name='number'),
     path('game/', views.game, name='game'),
     path('statistics/', views.statistics, name='statistics'),
-    path('create/', views.create_author, name='create'),
+    path('create/', views.create_authors, name='create'),
 ]
