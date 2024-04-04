@@ -1,7 +1,9 @@
 import logging
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Client
+from .models import Client, Order, OrderItem
+from django.utils import timezone
+from datetime import timedelta
 
 # Create your views here.
 logger = logging.getLogger(__name__)
@@ -74,3 +76,26 @@ def delete_client(client_id):
     client.delete()
     logger.info('Клиент удален!')
     return HttpResponse(client)
+
+def orders_list(request):
+    orders = Order.objects.filter(client=request.user.pk) 
+    return render(request, 'hw_app/orders_list.html', {'orders': orders})
+
+def orders_list_time(request, period):
+    if period == 'week':
+        start_date = timezone.now() - timedelta(days=7)
+    elif period == 'month':
+        start_date = timezone.now() - timedelta(days=30)
+    elif period == 'year':
+        start_date = timezone.now() - timedelta(days=365)
+    
+    order_items = OrderItem.objects.filter(order__client=request.user.pk, order__order_date__gte=start_date).order_by('order__order_date', 'product__name')
+    
+    unique_order_items = []
+    seen = set()
+    for order_item in order_items:
+        if order_item.product.name not in seen:
+            unique_order_items.append(order_item)
+            seen.add(order_item.product.name)
+    
+    return render(request, 'hw_app/ordered_products_list.html', {'order_items': unique_order_items})

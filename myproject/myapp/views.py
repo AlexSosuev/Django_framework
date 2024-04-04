@@ -33,16 +33,20 @@ def about(request):
 # Добавьте логирование в проект. Настройте возможность вывода в файл и в терминал. Устраните возможные ошибки.
 # *Форматирование настройте по своему желанию. Объясните что вы выводите в логи
     
-def coin(request):
-    result = choice(['orel', 'reshka'])
-    logger.info(f'result = {result}')
-    return HttpResponse(result)
+def coin(request, num):
+    result = [choice(['orel', 'reshka']) for _ in range(num)]
+    context = {'result': result}
+    return render(request, 'myapp/games.html', context)
 
-def cube(request):
-    return HttpResponse(randint(1, 6))
+def cube(request, num):
+    result = [randint(1, 6) for _ in range(num)]
+    context = {'result': result}
+    return render(request, 'myapp/games.html', context)
 
-def number(request):
-    return HttpResponse(randint(1, 100))
+def number(request, num):
+    result = [randint(1, 100) for _ in range(num)]
+    context = {'result': result}
+    return render(request, 'myapp/games.html', context)
 
 def game(request):
     coin_side = random.choice(['head', 'tail'])
@@ -62,3 +66,16 @@ def create_authors(request):
         result.append(author.fullname())
     return HttpResponse(f'{result}')
     
+def index(request):
+    context = {
+        'title': 'Главная',
+        'message': 'Это главная страница'
+    }
+    return render(request, 'myapp/index.html', context)
+
+def about(request):
+    context = {
+        'title': 'О нас',
+        'message': 'Это страница о ...'
+    }
+    return render(request, 'myapp/about.html', context)
