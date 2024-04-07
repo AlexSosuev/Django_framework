@@ -1,7 +1,9 @@
 import random
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from random import choice, randint
-from .models import Games, Author_2
+
+from .forms import AuthorForm, GameForm
+from .models import Author, Games, Author_2
 from datetime import date
 
 import logging
@@ -79,3 +81,38 @@ def about(request):
         'message': 'Это страница о ...'
     }
     return render(request, 'myapp/about.html', context)
+
+def all_games(request):
+    if request.method == 'POST':
+        form = GameForm(request.POST)
+        if form.is_valid():
+            game_type = form.cleaned_data['game_type']
+            num_tries = form.cleaned_data['num_tries']
+            if game_type == 'coin':
+                return redirect('coin', num_tries)            
+            elif game_type == 'cube':
+                return redirect('cube', num_tries)
+            else:
+                return redirect('number', num_tries)
+    else:
+        form = GameForm()
+    return render(request, 'myapp/all_games.html', {'form': form})
+
+def add_author(request):
+    if request.method == 'POST':
+        form = AuthorForm(request.POST)        
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            lastname = form.cleaned_data['lastname']
+            email = form.cleaned_data['email']
+            biography = form.cleaned_data['biography']
+            birthday = form.cleaned_data['birthday']
+            author = Author_2(name=name, lastname=lastname, email=email, biography=biography, birthday=birthday)
+            author.save()
+            message = 'Автор добавлен в базу'
+        else:
+            message = 'Некорректные данные'
+    else:
+        form = AuthorForm()
+        message = 'Введите данные'
+    return render(request, 'myapp/form.html', {'form': form, 'message': message})              
