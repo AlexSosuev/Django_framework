@@ -319,3 +319,94 @@ INFO 2024-04-04 22:35:16,299 autoreload 8180 4860 D:\Education_python\Django_fra
 INFO 2024-04-04 22:35:17,374 autoreload 8060 1296 Watching for file changes with StatReloader
 INFO 2024-04-04 22:35:17,757 basehttp 8060 7740 "GET /HW/ordered-products/week/ HTTP/1.1" 200 311
 INFO 2024-04-04 22:35:31,035 basehttp 8060 7740 "GET /HW/orders/ HTTP/1.1" 200 136
+INFO 2024-04-07 18:09:41,180 autoreload 8280 8232 Watching for file changes with StatReloader
+INFO 2024-04-07 18:09:45,274 basehttp 8280 5588 "GET / HTTP/1.1" 200 313
+WARNING 2024-04-07 18:09:45,701 log 8280 5588 Not Found: /favicon.ico
+WARNING 2024-04-07 18:09:45,702 basehttp 8280 5588 "GET /favicon.ico HTTP/1.1" 404 2528
+WARNING 2024-04-07 18:10:00,243 log 8280 5588 Not Found: /les3/users/add/
+WARNING 2024-04-07 18:10:00,243 basehttp 8280 5588 "GET /les3/users/add/ HTTP/1.1" 404 4849
+ERROR 2024-04-07 18:10:09,389 log 8280 5588 Internal Server Error: /les3/user/add/
+Traceback (most recent call last):
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\myproject\app_lecture\views.py", line 96, in user_form
+    form.UserForm()
+    ^^^^
+UnboundLocalError: cannot access local variable 'form' where it is not associated with a value
+ERROR 2024-04-07 18:10:09,392 basehttp 8280 5588 "GET /les3/user/add/ HTTP/1.1" 500 67194
+INFO 2024-04-07 18:14:11,705 autoreload 8280 8232 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-07 18:14:12,587 autoreload 5880 8860 Watching for file changes with StatReloader
+ERROR 2024-04-07 18:14:19,674 log 5880 1960 Internal Server Error: /les3/user/add/
+Traceback (most recent call last):
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\myproject\app_lecture\views.py", line 23, in user_form
+    form.UserForm()
+    ^^^^
+UnboundLocalError: cannot access local variable 'form' where it is not associated with a value
+ERROR 2024-04-07 18:14:19,678 basehttp 5880 1960 "GET /les3/user/add/ HTTP/1.1" 500 68005
+INFO 2024-04-07 18:15:18,040 autoreload 5880 8860 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-07 18:15:19,040 autoreload 9108 6808 Watching for file changes with StatReloader
+INFO 2024-04-07 18:15:21,972 basehttp 9108 5176 "GET /les3/user/add/ HTTP/1.1" 200 610
+INFO 2024-04-07 18:20:19,268 basehttp 9108 5176 "GET /les3/user/add/ HTTP/1.1" 200 852
+INFO 2024-04-07 18:23:51,312 autoreload 9108 6808 D:\Education_python\Django_framework\myproject\app_lecture\forms.py changed, reloading.
+INFO 2024-04-07 18:23:52,342 autoreload 5244 4224 Watching for file changes with StatReloader
+INFO 2024-04-07 18:26:18,503 autoreload 5244 4224 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-07 18:26:19,965 autoreload 5684 5588 Watching for file changes with StatReloader
+INFO 2024-04-07 18:28:28,622 autoreload 5684 5588 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-07 18:28:29,963 autoreload 6136 7936 Watching for file changes with StatReloader
+INFO 2024-04-07 18:30:01,900 autoreload 6136 7936 D:\Education_python\Django_framework\myproject\app_lecture\urls.py changed, reloading.
+INFO 2024-04-07 18:30:02,861 autoreload 4224 5664 Watching for file changes with StatReloader
+INFO 2024-04-07 18:32:21,832 basehttp 4224 8728 "GET /les3/forms/ HTTP/1.1" 200 1516
+INFO 2024-04-07 18:39:48,413 autoreload 4224 5664 D:\Education_python\Django_framework\myproject\app_lecture\forms.py changed, reloading.
+INFO 2024-04-07 18:39:49,567 autoreload 3424 8300 Watching for file changes with StatReloader
+INFO 2024-04-07 18:41:15,485 autoreload 3424 8300 D:\Education_python\Django_framework\myproject\app_lecture\forms.py changed, reloading.
+INFO 2024-04-07 18:41:16,820 autoreload 7364 5364 Watching for file changes with StatReloader
+INFO 2024-04-07 18:43:40,197 autoreload 7364 5364 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-07 18:43:41,453 autoreload 7476 7672 Watching for file changes with StatReloader
+INFO 2024-04-07 18:44:22,323 autoreload 7476 7672 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-07 18:44:23,568 autoreload 6868 4620 Watching for file changes with StatReloader
+INFO 2024-04-07 18:45:35,290 basehttp 6868 6452 "GET /les3/forms/ HTTP/1.1" 200 2137
+INFO 2024-04-07 18:46:50,611 autoreload 6868 4620 D:\Education_python\Django_framework\myproject\app_lecture\forms.py changed, reloading.
+INFO 2024-04-07 18:46:51,806 autoreload 6988 4196 Watching for file changes with StatReloader
+INFO 2024-04-07 18:49:44,931 autoreload 6988 4196 D:\Education_python\Django_framework\myproject\app_lecture\forms.py changed, reloading.
+INFO 2024-04-07 18:49:46,087 autoreload 4128 9088 Watching for file changes with StatReloader
+INFO 2024-04-07 18:50:28,533 autoreload 4128 9088 D:\Education_python\Django_framework\myproject\app_lecture\forms.py changed, reloading.
+INFO 2024-04-07 18:50:29,752 autoreload 3000 6812 Watching for file changes with StatReloader
+INFO 2024-04-07 18:53:48,106 autoreload 3000 6812 D:\Education_python\Django_framework\myproject\app_lecture\models.py changed, reloading.
+INFO 2024-04-07 18:53:49,301 autoreload 6068 4600 Watching for file changes with StatReloader
+INFO 2024-04-07 18:54:19,454 autoreload 6068 4600 D:\Education_python\Django_framework\myproject\app_lecture\models.py changed, reloading.
+INFO 2024-04-07 18:54:20,407 autoreload 5980 7508 Watching for file changes with StatReloader
+INFO 2024-04-07 19:35:31,955 autoreload 5192 8452 Watching for file changes with StatReloader
+ERROR 2024-04-07 19:35:36,254 log 5192 2300 Internal Server Error: /les3/upload/
+Traceback (most recent call last):
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\myproject\app_lecture\views.py", line 53, in upload_image
+    return render(request, 'myapp4/upload_image.html', {'form':form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp4/upload_image.html
+ERROR 2024-04-07 19:35:36,259 basehttp 5192 2300 "GET /les3/upload/ HTTP/1.1" 500 84960
+INFO 2024-04-07 19:36:24,819 autoreload 5192 8452 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
+INFO 2024-04-07 19:36:25,696 autoreload 3104 5808 Watching for file changes with StatReloader
+INFO 2024-04-07 19:36:29,018 basehttp 3104 5052 "GET /les3/upload/ HTTP/1.1" 200 599
