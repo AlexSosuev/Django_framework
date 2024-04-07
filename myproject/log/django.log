@@ -410,3 +410,40 @@ ERROR 2024-04-07 19:35:36,259 basehttp 5192 2300 "GET /les3/upload/ HTTP/1.1" 50
 INFO 2024-04-07 19:36:24,819 autoreload 5192 8452 D:\Education_python\Django_framework\myproject\app_lecture\views.py changed, reloading.
 INFO 2024-04-07 19:36:25,696 autoreload 3104 5808 Watching for file changes with StatReloader
 INFO 2024-04-07 19:36:29,018 basehttp 3104 5052 "GET /les3/upload/ HTTP/1.1" 200 599
+INFO 2024-04-07 22:16:56,041 autoreload 1916 4000 Watching for file changes with StatReloader
+INFO 2024-04-07 22:17:01,109 basehttp 1916 9780 "GET / HTTP/1.1" 200 313
+WARNING 2024-04-07 22:17:33,266 log 1916 9780 Not Found: /hw/edit_product/
+WARNING 2024-04-07 22:17:33,267 basehttp 1916 9780 "GET /hw/edit_product/ HTTP/1.1" 404 2543
+ERROR 2024-04-07 22:17:50,176 log 1916 9780 Internal Server Error: /HW/edit_product/
+Traceback (most recent call last):
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\myproject\hw_app\views.py", line 121, in edit_product
+    form = ProductForm()
+           ^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+ERROR 2024-04-07 22:17:50,180 basehttp 1916 9780 "GET /HW/edit_product/ HTTP/1.1" 500 74173
+INFO 2024-04-07 22:20:13,991 autoreload 1916 4000 D:\Education_python\Django_framework\myproject\hw_app\forms.py changed, reloading.
+INFO 2024-04-07 22:20:14,982 autoreload 4348 9744 Watching for file changes with StatReloader
+INFO 2024-04-07 22:20:21,332 basehttp 4348 8452 "GET /HW/edit_product/ HTTP/1.1" 200 1471
+INFO 2024-04-07 22:21:23,964 basehttp 4348 8452 "POST /HW/edit_product/ HTTP/1.1" 200 1774
+INFO 2024-04-07 22:22:48,812 basehttp 4348 8452 "GET /les3/upload/ HTTP/1.1" 200 599
+INFO 2024-04-07 22:23:54,716 autoreload 4348 9744 D:\Education_python\Django_framework\myproject\hw_app\forms.py changed, reloading.
+INFO 2024-04-07 22:23:55,721 autoreload 9632 9260 Watching for file changes with StatReloader
+INFO 2024-04-07 22:24:02,828 autoreload 9632 9260 D:\Education_python\Django_framework\myproject\myapp\forms.py changed, reloading.
+INFO 2024-04-07 22:24:03,724 autoreload 4764 8412 Watching for file changes with StatReloader
+INFO 2024-04-07 22:24:48,696 autoreload 9640 9544 Watching for file changes with StatReloader
+INFO 2024-04-07 22:24:52,244 basehttp 9640 1388 "GET / HTTP/1.1" 200 313
+INFO 2024-04-07 22:25:01,845 basehttp 9640 1388 "GET /HW/edit_product/ HTTP/1.1" 200 1528
+INFO 2024-04-07 22:25:55,715 autoreload 9640 9544 D:\Education_python\Django_framework\myproject\hw_app\forms.py changed, reloading.
+INFO 2024-04-07 22:25:56,561 autoreload 1128 9572 Watching for file changes with StatReloader
+INFO 2024-04-07 22:26:00,544 basehttp 1128 6452 "GET /HW/edit_product/ HTTP/1.1" 200 1545
+INFO 2024-04-07 22:26:20,394 basehttp 1128 6452 "POST /HW/edit_product/ HTTP/1.1" 200 1725
+INFO 2024-04-07 22:27:03,959 basehttp 1128 6452 "POST /HW/edit_product/ HTTP/1.1" 200 1725
+INFO 2024-04-07 22:27:23,027 basehttp 1128 6452 "POST /HW/edit_product/ HTTP/1.1" 200 1725

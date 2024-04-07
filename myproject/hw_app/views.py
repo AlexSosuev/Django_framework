@@ -1,7 +1,9 @@
 import logging
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import HttpResponse
-from .models import Client, Order, OrderItem
+
+from .forms import ProductForm
+from .models import Client, Order, OrderItem, Product
 from django.utils import timezone
 from datetime import timedelta
 
@@ -99,3 +101,23 @@ def orders_list_time(request, period):
             seen.add(order_item.product.name)
     
     return render(request, 'hw_app/ordered_products_list.html', {'order_items': unique_order_items})
+
+def edit_product(request):      
+        if request.method == 'POST':
+            form = ProductForm(request.POST)
+            if form.is_valid():
+                name = form.cleaned_data['name']
+                description = form.cleaned_data['description']
+                price = form.cleaned_data['price']
+                quantity = form.cleaned_data['quantity']
+                added_date = form.cleaned_data['added_date']
+                photo = form.cleaned_data['photo']
+                product = Product(name=name, description=description, price=price, quantity=quantity, added_date=added_date, photo=photo)
+                product.save()
+                message = 'Продукт изменен'
+            else:
+                message = 'Некорректные данные'
+        else:
+            form = ProductForm()
+            message = 'Введите данные'
+        return render(request, 'hw_app/edit_product.html', {'form': form, 'message': message})

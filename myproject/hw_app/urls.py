@@ -9,4 +9,5 @@ urlpatterns = [
     path('del_client/', views.delete_client, name='delete_client'),
     path('orders/', views.orders_list, name='order_list'),
     path('ordered-products/<str:period>/', views.orders_list_time, name='ordered_products_list'),
+    path('edit_product/', views.edit_product, name='edit_product'),
 ]
