@@ -23,5 +23,7 @@ urlpatterns = [
     path('prefix/', include('myapp.urls')),
     path('HW/', include('hw_app.urls')),
     path('les3/', include('app_lecture.urls')),
-    path('', index)
+    path('', index),
+    # path('__debug__/', include("debug_toolbar.urls")),
+    path('les6/', include('myapp6.urls')),
 ]

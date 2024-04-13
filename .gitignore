@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+**/__pycache__/
+.env
+/media/
+/static/
+*.sqlite3
+*.log
+*.рус

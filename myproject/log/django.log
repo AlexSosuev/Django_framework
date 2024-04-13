@@ -618,3 +618,74 @@ INFO 2024-04-12 06:41:27,429 basehttp 6248 10096 "GET /admin/hw_app/product/ HTT
 INFO 2024-04-12 06:41:29,115 basehttp 6248 10096 "GET /admin/hw_app/product/2/change/ HTTP/1.1" 200 11414
 INFO 2024-04-12 06:41:29,182 basehttp 6248 10096 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
 INFO 2024-04-12 06:41:33,358 basehttp 6248 10096 "POST /admin/logout/ HTTP/1.1" 200 3817
+INFO 2024-04-13 14:56:35,252 autoreload 4264 6072 Watching for file changes with StatReloader
+INFO 2024-04-13 14:57:15,595 autoreload 5936 7156 Watching for file changes with StatReloader
+INFO 2024-04-13 14:57:29,321 basehttp 5936 7076 "GET / HTTP/1.1" 200 10126
+INFO 2024-04-13 14:57:29,460 basehttp 5936 7076 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2024-04-13 14:57:29,492 basehttp 5936 872 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+INFO 2024-04-13 14:57:29,550 basehttp 5936 7076 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-04-13 14:57:29,662 basehttp 5936 7076 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2024-04-13 14:57:29,842 log 5936 7076 Not Found: /favicon.ico
+WARNING 2024-04-13 14:57:29,842 basehttp 5936 7076 "GET /favicon.ico HTTP/1.1" 404 12434
+INFO 2024-04-13 14:58:30,142 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=328986f46d8841afa20ff996cf218e1f&panel_id=HistoryPanel HTTP/1.1" 200 4150
+INFO 2024-04-13 14:58:30,188 basehttp 5936 7076 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+INFO 2024-04-13 14:58:34,612 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=328986f46d8841afa20ff996cf218e1f&panel_id=VersionsPanel HTTP/1.1" 200 760
+INFO 2024-04-13 14:58:46,030 basehttp 5936 7076 "GET /__debug__/history_refresh/?store_id=328986f46d8841afa20ff996cf218e1f&exclude_history=True HTTP/1.1" 200 3363
+INFO 2024-04-13 14:58:48,985 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=328986f46d8841afa20ff996cf218e1f&panel_id=SettingsPanel HTTP/1.1" 200 27355
+INFO 2024-04-13 14:58:59,018 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=328986f46d8841afa20ff996cf218e1f&panel_id=HeadersPanel HTTP/1.1" 200 5177
+INFO 2024-04-13 14:59:06,896 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=328986f46d8841afa20ff996cf218e1f&panel_id=RequestPanel HTTP/1.1" 200 1451
+INFO 2024-04-13 14:59:40,125 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=328986f46d8841afa20ff996cf218e1f&panel_id=SQLPanel HTTP/1.1" 200 428
+INFO 2024-04-13 15:00:05,271 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=328986f46d8841afa20ff996cf218e1f&panel_id=StaticFilesPanel HTTP/1.1" 200 33398
+INFO 2024-04-13 15:00:39,539 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=328986f46d8841afa20ff996cf218e1f&panel_id=TemplatesPanel HTTP/1.1" 200 6505
+INFO 2024-04-13 15:00:40,645 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=328986f46d8841afa20ff996cf218e1f&panel_id=CachePanel HTTP/1.1" 200 1737
+INFO 2024-04-13 15:00:42,364 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=328986f46d8841afa20ff996cf218e1f&panel_id=SignalsPanel HTTP/1.1" 200 2231
+INFO 2024-04-13 15:02:27,235 basehttp 5936 7076 "GET /les3/user/add/ HTTP/1.1" 200 11146
+INFO 2024-04-13 15:02:34,748 basehttp 5936 7076 "GET /__debug__/render_panel/?store_id=2b6d2bdea74849058aa3471ddb0ee21e&panel_id=ProfilingPanel HTTP/1.1" 200 10467
+INFO 2024-04-13 15:41:05,625 autoreload 2564 8008 Watching for file changes with StatReloader
+INFO 2024-04-13 15:41:09,775 basehttp 2564 3056 "GET / HTTP/1.1" 200 10569
+INFO 2024-04-13 15:41:09,919 basehttp 2564 3056 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-13 15:41:09,919 basehttp 2564 9804 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-13 15:41:09,964 basehttp 2564 9804 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-13 15:41:10,075 basehttp 2564 9804 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-13 15:41:23,863 basehttp 2564 9804 "GET /les6/db HTTP/1.1" 200 10857
+INFO 2024-04-13 15:41:23,960 basehttp 2564 3056 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 200 48
+ERROR 2024-04-13 15:41:28,233 log 2564 3056 Internal Server Error: /les6/db/
+Traceback (most recent call last):
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\myproject\myapp6\views.py", line 12, in total_in_db
+    return render(request, 'app_lecture/total_count.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Education_python\Django_framework\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_lecture/total_count.html
+ERROR 2024-04-13 15:41:28,353 basehttp 2564 3056 "GET /les6/db/ HTTP/1.1" 500 97270
+INFO 2024-04-13 15:45:31,163 autoreload 2564 8008 D:\Education_python\Django_framework\myproject\myapp6\views.py changed, reloading.
+INFO 2024-04-13 15:45:32,136 autoreload 8028 5240 Watching for file changes with StatReloader
+INFO 2024-04-13 15:45:40,993 basehttp 8028 4780 "GET /les6/db/ HTTP/1.1" 200 10681
+INFO 2024-04-13 15:57:04,212 autoreload 8028 5240 D:\Education_python\Django_framework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-13 15:57:05,630 autoreload 6704 8856 Watching for file changes with StatReloader
+INFO 2024-04-13 15:58:13,417 autoreload 6704 8856 D:\Education_python\Django_framework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-13 15:58:14,831 autoreload 9584 2964 Watching for file changes with StatReloader
+INFO 2024-04-13 15:59:35,985 autoreload 9584 2964 D:\Education_python\Django_framework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-13 15:59:37,335 autoreload 9476 8812 Watching for file changes with StatReloader
+INFO 2024-04-13 16:00:41,923 autoreload 9476 8812 D:\Education_python\Django_framework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-13 16:00:43,254 autoreload 10156 10176 Watching for file changes with StatReloader
+INFO 2024-04-13 16:02:10,603 autoreload 10156 10176 D:\Education_python\Django_framework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-13 16:02:11,619 autoreload 9044 9880 Watching for file changes with StatReloader
+INFO 2024-04-13 16:07:33,818 autoreload 9044 9880 D:\Education_python\Django_framework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-13 16:07:35,851 autoreload 9348 4128 Watching for file changes with StatReloader
+INFO 2024-04-13 16:08:14,587 autoreload 9348 4128 D:\Education_python\Django_framework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-13 16:08:15,954 autoreload 32 5472 Watching for file changes with StatReloader
+INFO 2024-04-13 16:09:15,790 autoreload 32 5472 D:\Education_python\Django_framework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-13 16:09:17,342 autoreload 8912 4512 Watching for file changes with StatReloader
